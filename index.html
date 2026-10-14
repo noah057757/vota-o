@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Urna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="urna">
+    <h1>🗳️ Mini Urna</h1>
+    <p>Votação secreta entre amigos!</p>
+
+    <label for="codigo">Código da votação</label>
+    <input id="codigo" type="password"
+           placeholder="Digite o código">
+
+    <label for="nome">Seu nome</label>
+    <input id="nome" type="text"
+           placeholder="Digite seu nome">
+
+    <h2>Escolha seu voto</h2>
+
+    <div id="opcoes">
+      <button onclick="votar('Opção A')">Opção A</button>
+      <button onclick="votar('Opção B')">Opção B</button>
+      <button onclick="votar('Opção C')">Opção C</button>
+    </div>
+
+    <p id="mensagem"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
